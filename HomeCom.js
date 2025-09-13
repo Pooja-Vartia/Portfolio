@@ -11,6 +11,7 @@ import { faHamburger, faCode, faHouse, faLaptopCode, faPhoneFlip } from '@fortaw
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 
 export default function HomeCom({ handleToggle, currentState }) {
@@ -54,17 +55,33 @@ useEffect(() => {
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg py-1 px-3" style={navStyle}>
         <div className="d-flex align-items-center w-100 justify-content-between">
-          <a href="/" className="navbar-brand">
+          <Link to="/Home" className="navbar-brand">
             <img src={myLogo} alt="Logo" style={{ height: '90px' }} />
-          </a>
+          </Link>
           <h6 className="mb-0 ">UX DESIGNER + FULL STACK WEB DEVELOPER</h6>
           <FontAwesomeIcon icon={faCode} size="1x" color={currentState ? '#ffffff' : '#000000'} />
 
           <div className="d-none d-lg-flex flex-grow-1 justify-content-end">
             <ul className="navbar-nav flex-row gap-4" style={{ fontSize: '18px' }}>
-              <li className="nav-item"><a className="nav-link" style={navStyle} href="/home"><FontAwesomeIcon icon={faHouse} size="1x" color={currentState ? '#ffffff' : '#000000'} /> About</a></li>
-              <li className="nav-item"><a className="nav-link" style={navStyle} href="/home"><FontAwesomeIcon icon={faLaptopCode} size="1x" color={currentState ? '#ffffff' : '#000000'} /> Work</a></li>
-              <li className="nav-item"><a className="nav-link" style={navStyle} href="/home"><FontAwesomeIcon icon={faPhoneFlip} size="1x" color={currentState ? '#ffffff' : '#000000'} /> Contact</a></li>
+              <li className="nav-item">
+               
+              <Link className="nav-link" style={navStyle} to="/about">
+              <FontAwesomeIcon icon={faHouse} size="1x" color={currentState ? '#ffffff' : '#000000'} /> 
+              About
+              </Link>
+              </li>
+              <li className="nav-item">
+              <Link className="nav-link" style={navStyle} to="/work">
+              <FontAwesomeIcon icon={faLaptopCode} size="1x" color={currentState ? '#ffffff' : '#000000'} /> 
+              Work
+              </Link>
+              </li>
+              <li className="nav-item">
+              <Link className="nav-link" style={navStyle} to="/contact">
+              <FontAwesomeIcon icon={faPhoneFlip} size="1x" color={currentState ? '#ffffff' : '#000000'} /> 
+              Contact
+              </Link>
+              </li>
             </ul>
           </div>
 
@@ -81,9 +98,9 @@ useEffect(() => {
         {menuOpen && (
           <div className="d-lg-none mt-2 w-100" style={{ backgroundColor: currentState ? '#222' : '#eee' }}>
             <ul className="navbar-nav flex-column pl-3" style={{ fontSize: '18px' }}>
-              <li className="nav-item"><a className="nav-link" style={navStyle} href="/home">About</a></li>
-              <li className="nav-item"><a className="nav-link" style={navStyle} href="/home">Work</a></li>
-              <li className="nav-item"><a className="nav-link" style={navStyle} href="/home">Contact</a></li>
+              <li className="nav-item"><Link className="nav-link" style={navStyle} to="/about">About</Link></li>
+              <li className="nav-item"><Link className="nav-link" style={navStyle} to="/work">Work</Link></li>
+              <li className="nav-item"><Link className="nav-link" style={navStyle} to="/contact">Contact</Link></li>
             </ul>
           </div>
         )}
