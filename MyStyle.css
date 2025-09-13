@@ -1,0 +1,13 @@
+.myFullStackDiv{
+    width: 90vw;
+    margin: auto;
+}
+.designing{
+    margin: 2% 0%;
+    padding: 2px 2px;
+    border-bottom: 1px solid grey;
+}
+.designing:hover {
+   /* background-color: rgba(15, 15, 14, 0.945);  */
+    border-bottom: 5px solid goldenrod;
+}
