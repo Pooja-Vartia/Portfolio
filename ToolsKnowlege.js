@@ -59,7 +59,7 @@ const StyleList ={
     <>    
     <div className='container-fluid  mt-5 '> 
     <section className="tools-section col-lg-8" id="myCertification" >
-      <h2  style={myTools}>Tools I Use in My Coding Journey</h2>
+      <h2  style={myTools}>Software I Use in My Coding Journey</h2>
       </section>
       <section>
       <ul className="container tools-list" style={toolstyle} data-aos="fade-down">
