@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 
 
-export default function HomeCom({ handleToggle, currentState }) {
+export default function HomeCom({ currentState }) {
 
 const [menuOpen, setMenuOpen] = useState(false);
 const textRef = useRef(null);
@@ -22,20 +22,6 @@ useEffect(() => {
   AOS.init({ duration: 2000 });
 }, []);
 
-
-  const navStyle = {
-    position: 'sticky',
-    top: 0,
-    zIndex: 1000,
-    background: currentState ? 'black' : 'white',
-    color: currentState ? 'white' : 'black',
-  };
-
-  const buttonStyle = {
-    background: currentState ? 'white' : 'black',
-    color: currentState ? 'black' : 'white',
-    cursor: 'pointer',
-  };
 
   const HeadingColor = {
     background: "radial-gradient(circle, rgba(225, 208, 51, 0.93), rgba(216, 193, 67, 0.91), rgba(237, 163, 68, 0.93))",
@@ -51,60 +37,9 @@ useEffect(() => {
   };
 
   return (
+    <>
     <div className="container-fluid " >
-      {/* Navbar */}
-      <nav className="navbar navbar-expand-lg py-1 px-3" style={navStyle}>
-        <div className="d-flex align-items-center w-100 justify-content-between">
-          <Link to="/Home" className="navbar-brand">
-            <img src={myLogo} alt="Logo" style={{ height: '90px' }} />
-          </Link>
-          <h6 className="mb-0 ">UX DESIGNER + FULL STACK WEB DEVELOPER</h6>
-          <FontAwesomeIcon icon={faCode} size="1x" color={currentState ? '#ffffff' : '#000000'} />
-
-          <div className="d-none d-lg-flex flex-grow-1 justify-content-end">
-            <ul className="navbar-nav flex-row gap-4" style={{ fontSize: '18px' }}>
-              <li className="nav-item">
-               
-              <Link className="nav-link" style={navStyle} to="/about">
-              <FontAwesomeIcon icon={faHouse} size="1x" color={currentState ? '#ffffff' : '#000000'} /> 
-              About
-              </Link>
-              </li>
-              <li className="nav-item">
-              <Link className="nav-link" style={navStyle} to="/work">
-              <FontAwesomeIcon icon={faLaptopCode} size="1x" color={currentState ? '#ffffff' : '#000000'} /> 
-              Work
-              </Link>
-              </li>
-              <li className="nav-item">
-              <Link className="nav-link" style={navStyle} to="/contact">
-              <FontAwesomeIcon icon={faPhoneFlip} size="1x" color={currentState ? '#ffffff' : '#000000'} /> 
-              Contact
-              </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="d-flex align-items-center">
-            <button className="btn d-lg-none me-2" onClick={toggleMenu}>
-              <FontAwesomeIcon icon={faHamburger} size="2x" color={currentState ? '#ffffff' : '#000000'} />
-            </button>
-            <button className="btn" style={buttonStyle} onClick={handleToggle}>
-              {currentState ? 'white' : 'black'}
-            </button>
-          </div>
-        </div>
-
-        {menuOpen && (
-          <div className="d-lg-none mt-2 w-100" style={{ backgroundColor: currentState ? '#222' : '#eee' }}>
-            <ul className="navbar-nav flex-column pl-3" style={{ fontSize: '18px' }}>
-              <li className="nav-item"><Link className="nav-link" style={navStyle} to="/about">About</Link></li>
-              <li className="nav-item"><Link className="nav-link" style={navStyle} to="/work">Work</Link></li>
-              <li className="nav-item"><Link className="nav-link" style={navStyle} to="/contact">Contact</Link></li>
-            </ul>
-          </div>
-        )}
-      </nav>
+      
 
       {/* Content Section */}
       <div data-aos="fade-up"
@@ -146,7 +81,7 @@ useEffect(() => {
 
           <div className="container ml-5 center col-lg-6 col-md-12 col-sm-12 col-xs-12" >
             <h4 className=" " style={{ fontFamily: 'serif', fontSize: '20px' }}>
-              Welcome! I'm a Full Stack Web Developer—feel free to explore my portfolio and biodata below to see my work and skills in action.
+              Welcome! I'm a Full Stack Web Developer—feel free to explore my portfolio and biodata using navigation to see my work and skills in action.
             </h4>
             <FontAwesomeIcon icon={faCode} size="2x" color={currentState ? '#ffffff' : '#000000'} />
             <div
@@ -197,6 +132,63 @@ useEffect(() => {
               </div>
             </h3>
 
+    <div>
+      
+
+
+    <div className="container my-5">
+      <h1 className=" mb-3 bold">Experience</h1>
+      <h4 className=" ">
+        Welcome to my journey! Here's why this matters: every step reflects growth, grit, and a passion for design and development. If you're curious about how a self-taught learner evolves into a full-stack creator, read on.
+      </h4>
+
+      <div className="row col-12 mt-4">
+        <div className="col-md-6 mb-4">
+          <div className="border p-3 rounded shadow-sm col-lg-12">
+            <h5>🎓 School Education</h5>
+            <p><strong>What:</strong> Arts Field</p>
+            <p><strong>Where:</strong> Local Government Girl School Amloh</p>
+            <p><strong>When:</strong> Completed in 2020</p>
+            <p><em>Experience:</em> Built a strong foundation in creativity and expression.</p>
+          </div>
+        </div>
+
+        <div className="col-md-6 mb-4">
+          <div className="border p-3 rounded shadow-sm col-lg-12">
+            <h5>🎓 Graduation</h5>
+            <p><strong>What:</strong> Bachelor's Degree In Computer Application</p>
+            <p><strong>Where:</strong> MGC College, Fatehgarh Sahib</p>
+            <p><strong>When:</strong> Completed in 2023</p>
+            <p><em>Experience:</em> Gained academic depth in Full Stack Web Development.</p>
+          </div>
+        </div>
+</div>
+<div className="row col-12 mt-4">
+        <div className="col-md-6 mb-4">
+          <div className="border p-3 rounded shadow-sm">
+            <h5>📜 UX Design Certification</h5>
+            <p><strong>What:</strong> Google UX Design Program</p>
+            <p><strong>Where:</strong> Online</p>
+            <p><strong>When:</strong> 6-month program completed in 2024 </p>
+            <p><em>Experience:</em> Learned user-centered design, wireframing, prototyping, and usability testing.</p>
+          </div>
+        </div>
+
+        <div className="col-md-6 mb-4">
+          <div className="border p-3 rounded shadow-sm">
+            <h5>💻 Web Development Practice</h5>
+            <p><strong>What:</strong> Self-study & Projects</p>
+            <p><strong>Where:</strong> Home + Online Resources</p>
+            <p><strong>When:</strong> Ongoing</p>
+            <p><em>Experience:</em> Designed web pages using HTML, CSS, JavaScript, React, Bootstrap, PHP & MySQL. Currently diving deeper into full-stack development.</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+     
+    </div>
+    </div>
+   </> 
   );
 }
