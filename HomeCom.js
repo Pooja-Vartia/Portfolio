@@ -2,6 +2,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import myLogo from './myLogo.png';
 import MYphoto from './MYphoto.png';
 import HomePic from './HomePic.png';
+import leafTopcorner from './leafTopcorner.jpg';
+import SchoolGirl2 from './SchoolGirl2.png';
+import graduatedGirl2 from './graduatedGirl2.png';
+import certificateCartoon2 from './certificateCartoon2.png';
+import  webCartoonDev2 from './webCartoonDev2.png';
 import 'animate.css';
 import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -90,8 +95,7 @@ useEffect(() => {
                 marginTop: '20px',
                 fontSize: '20px',
                  background: "radial-gradient(circle, rgba(55, 48, 148, 0.93), rgba(57, 80, 211, 0.91), rgba(117, 117, 253, 0.93))",
-          boxShadow: '0 8px 32px rgba(31, 38, 135, 0.37)',
-
+          // boxShadow: '0 8px 32px rgba(31, 38, 135, 0.37)',
     backgroundClip: "text",
     WebkitBackgroundClip: "text",
     color: "transparent",
@@ -99,10 +103,9 @@ useEffect(() => {
                 fontFamily: 'serif',
                 // color: currentState ? 'white' : 'black',
                 minHeight: '40px',
-                textAlign: 'center'
               }}
             >
-            <p>Portfolio!</p>
+            <p> Portfolio! </p>
             </div>
           </div>
         </div>
@@ -114,7 +117,9 @@ useEffect(() => {
               fontStyle: 'italic',
               padding: '10vh 2vw'
             }} data-aos="fade-left">
-              "I'm a Computer Applications graduate skilled in Front-end and Back-end development, with a recent Google UX Design certification. I design and develop intuitive interfaces using Figma, Canva and VS Code. 
+              "I'm a Computer Applications graduate skilled in Front-end and Back-end development,
+               with a recent Google UX Design certification. I design 
+               and develop intuitive interfaces using Figma, Canva and VS Code. 
               <div className='container mt-5 d-flex justify-content-end  '  style={{
           width: '30vw',
           backgroundColor: currentState ? 'rgba(0, 0, 0, 0)' : 'rgba(0, 0, 0, 0.18)',
@@ -137,15 +142,21 @@ useEffect(() => {
 
 
     <div className="container my-5">
-      <h1 className=" mb-3 bold">Experience</h1>
+      <h1 className='mb-3 bold  animate_animation animate_tada' style={HeadingColor}>Experience</h1>
       <h4 className=" ">
         Welcome to my journey! Here's why this matters: every step reflects growth, grit, and a passion for design and development. If you're curious about how a self-taught learner evolves into a full-stack creator, read on.
       </h4>
 
       <div className="row col-12 mt-4">
-        <div className="col-md-6 mb-4">
-          <div className="border p-3 rounded shadow-sm col-lg-12">
-            <h5>🎓 School Education</h5>
+        <div  className="col-md-6 mb-4 ExperienceBox">
+          <div className="border p-3 rounded shadow-sm col-lg-12" style={{
+            backgroundImage:`url(${SchoolGirl2})`,
+            backgroundRepeat:'no-repeat',
+            backgroundPosition:'top right',
+            backgroundSize:'30% 50%'
+
+          }}>
+            <h4 className='pt-5'>🎓 School Education</h4>
             <p><strong>What:</strong> Arts Field</p>
             <p><strong>Where:</strong> Local Government Girl School Amloh</p>
             <p><strong>When:</strong> Completed in 2020</p>
@@ -153,9 +164,16 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className="col-md-6 mb-4">
-          <div className="border p-3 rounded shadow-sm col-lg-12">
-            <h5>🎓 Graduation</h5>
+        <div  className="col-md-6 mb-4 ExperienceBox">
+          <div className="border p-3 rounded shadow-sm col-lg-12" 
+          style={{
+            backgroundImage:`url(${graduatedGirl2})`,
+            backgroundRepeat:'no-repeat',
+            backgroundPosition:'top right',
+            backgroundSize:'30% 50%',
+          }}
+          >
+            <h4 className='pt-5'>🎓 Graduation</h4>
             <p><strong>What:</strong> Bachelor's Degree In Computer Application</p>
             <p><strong>Where:</strong> MGC College, Fatehgarh Sahib</p>
             <p><strong>When:</strong> Completed in 2023</p>
@@ -164,9 +182,16 @@ useEffect(() => {
         </div>
 </div>
 <div className="row col-12 mt-4">
-        <div className="col-md-6 mb-4">
-          <div className="border p-3 rounded shadow-sm">
-            <h5>📜 UX Design Certification</h5>
+        <div  className="col-md-6 mb-4 ExperienceBox">
+          <div className="border p-3 rounded shadow-sm" 
+          style={{
+            backgroundImage:`url(${certificateCartoon2})`,
+            backgroundRepeat:'no-repeat',
+            backgroundPosition:'top right',
+            backgroundSize:'30% 50%',
+          }}
+          >
+            <h4>📜 UX Design Certification</h4>
             <p><strong>What:</strong> Google UX Design Program</p>
             <p><strong>Where:</strong> Online</p>
             <p><strong>When:</strong> 6-month program completed in 2024 </p>
@@ -174,9 +199,17 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className="col-md-6 mb-4">
-          <div className="border p-3 rounded shadow-sm">
-            <h5>💻 Web Development Practice</h5>
+        <div  className="col-md-6 mb-4 ExperienceBox">
+          <div className="border p-3 rounded shadow-sm"
+           style={{
+            backgroundImage:`url(${webCartoonDev2})`,
+            backgroundRepeat:'no-repeat',
+            backgroundPosition:'top right',
+            backgroundSize:'30% 50%',
+          }}
+          
+          >
+            <h4>💻 Web Development Practice</h4>
             <p><strong>What:</strong> Self-study & Projects</p>
             <p><strong>Where:</strong> Home + Online Resources</p>
             <p><strong>When:</strong> Ongoing</p>

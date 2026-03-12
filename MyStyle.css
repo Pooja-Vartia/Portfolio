@@ -11,3 +11,12 @@
    /* background-color: rgba(15, 15, 14, 0.945);  */
     border-bottom: 5px solid goldenrod;
 }
+#navbarContent li:hover{
+    border-bottom: 2px solid goldenrod;
+}
+.projectbtn {
+    background-color: rgba(153, 100, 202, 0.432);
+}
+.ExperienceBox div{
+    height: 50vh;
+}

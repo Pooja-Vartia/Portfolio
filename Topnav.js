@@ -29,7 +29,7 @@ export default function Topnav({ mytoggler, currentState} ) {
   };
   return (
     <div className='conatiner-fluid'>
-      <nav className="navbar navbar-expand-lg py-1 px-3" style={navStyle}>
+      <nav className="navbar navbar-expand-lg py-1 px-3" style={navStyle} id='navbarContent'>
         <div className="d-flex align-items-center w-100 justify-content-between">
 
           
