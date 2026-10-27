@@ -17,6 +17,7 @@ I enjoy exploring new technologies, solving problems through code, and creating 
 
 - About Me
 - Portfolio Features
+- featured Projects
 - Technical Skills
 - Tools & Technologies
 - Education
@@ -57,6 +58,11 @@ This portfolio presents my background, technical knowledge, design interests, an
 - **Responsive Design:** Bootstrap-based layouts that adapt to different screen sizes.
 
 ---
+### 🚀 Featured Projects
+
+- **CloudColors Dashboard** — Built an interactive color-accessibility tool for contrast checking, color-blindness previews, and UI design using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.
+- **BusLink Amloh** — Developed a responsive bus-timing and travel-planning platform to help students and visitors plan convenient journeys around Amloh using HTML5, CSS3, Bootstrap, JavaScript, PHP, and MySQL.
+- **Personal Portfolio Website** — Created a fully responsive React-based portfolio featuring custom styling, CSS animations, interactive elements, and a showcase of my development and UI/UX skills.
 
 ## 🛠️ Technical Skills
 
