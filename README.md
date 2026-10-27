@@ -72,14 +72,20 @@ BusLink Amloh: Bus timing and travel-planning website.
 
 Personal Portfolio: Responsive portfolio built with React and CSS animations.
 
-## 💼 What I Can Build for You
+### 💼 What I Can Build for You
 
-| My Capabilities |
+<div align="center">
+
+**My Capabilities**
+
+</div>
+
+| Front-End Development | Back-End Development |
 |---|---|
-| ✓ Responsive Websites | ✓ Front-End Development |
-| ✓ React UI Components | ✓ Back-End Development |
-| ✓ PHP & MySQL Integration | ✓ Database Design & Connectivity |
-| ✓ UI/UX Design | ✓ Bootstrap & CSS Animations |
+| ✓ Responsive Websites | ✓ PHP Development |
+| ✓ React UI Components | ✓ MySQL & Database Connectivity |
+| ✓ UI/UX Design | ✓ Database Design |
+| ✓ Bootstrap & CSS Animations | ✓ Back-End Integration |
 
 ## 🛠️ Technical Skills
 
