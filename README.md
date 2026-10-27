@@ -1,3 +1,5 @@
+![image alt](https://github.com/Pooja-Vartia/Portfolio/blob/628a67222194e4eefe154faffb961e703ee96da5/Screenshot%20(1005).png)
+
 # 🌐 Pooja Vartia
 ### Full Stack Web Developer | UI/UX Enthusiast
 
