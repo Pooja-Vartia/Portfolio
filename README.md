@@ -64,6 +64,23 @@ This portfolio presents my background, technical knowledge, design interests, an
 - **BusLink Amloh** — Developed a responsive bus-timing and travel-planning platform to help students and visitors plan convenient journeys around Amloh using HTML5, CSS3, Bootstrap, JavaScript, PHP, and MySQL.
 - **Personal Portfolio Website** — Created a fully responsive React-based portfolio featuring custom styling, CSS animations, interactive elements, and a showcase of my development and UI/UX skills.
 
+## 🚀 Projects I’ve Built
+
+CloudColors Dashboard: Color contrast testing and color-blindness previews.
+
+BusLink Amloh: Bus timing and travel-planning website.
+
+Personal Portfolio: Responsive portfolio built with React and CSS animations.
+
+## 💼 What I Can Build for You
+
+| My Capabilities | My Capabilities |
+|---|---|
+| ✓ Responsive Websites | ✓ Front-End Development |
+| ✓ React UI Components | ✓ Back-End Development |
+| ✓ PHP & MySQL Integration | ✓ Database Design & Connectivity |
+| ✓ UI/UX Design | ✓ Bootstrap & CSS Animations |
+
 ## 🛠️ Technical Skills
 
 ### Front-End Development
