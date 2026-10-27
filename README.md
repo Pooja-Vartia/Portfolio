@@ -74,7 +74,7 @@ Personal Portfolio: Responsive portfolio built with React and CSS animations.
 
 ## 💼 What I Can Build for You
 
-| My Capabilities | My Capabilities |
+| My Capabilities |
 |---|---|
 | ✓ Responsive Websites | ✓ Front-End Development |
 | ✓ React UI Components | ✓ Back-End Development |
